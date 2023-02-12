@@ -43,91 +43,15 @@
   physicalDesc: reagent-physical-desc-buzzy
   flavor: bee
   color: "#FFD35D"
-  tileReactions:
-  - !type:CreateEntityTileReaction
-    entity: MobBee
-    usage: 2
-    maxOnTile: 2
-    randomOffsetMax: 0.3
-    maxOnTileWhitelist:
-      tags: [ Bee ]
-  - !type:CleanTileReaction # Bees are extremely obsessive about cleanliness within what they consider their hive.
-    cleanAmountMultiplier: 0 # Consume absolutely zero bees. Buzz buzz.
   metabolisms:
-    Poison:
+    Medicine:
+      metabolismRate: 0.1
       effects:
       - !type:PopupMessage
         type: Local
-        visualType: MediumCaution
-        messages:
-        - "buzzochloricbees-effect-oh-god-bees"
-        - "buzzochloricbees-effect-its-the-bees"
-        - "buzzochloricbees-effect-why-am-i-covered-in-bees"
-        - "buzzochloricbees-effect-one-with-the-bees"
-        - "buzzochloricbees-effect-squeaky-clean"
+        visualType: Large
+        messages: [ "barozine-effect-skin-burning", "barozine-effect-muscle-contract" ]
         probability: 0.1
-        conditions:
-        - !type:ReagentThreshold
-          max: 0
-          reagent: Histamine
-        - !type:HasTag
-          invert: true
-          tag: Bee
-      - !type:PopupMessage
-        type: Local
-        visualType: Medium
-        messages:
-          - "buzzochloricbees-effect-histamine-bee-allergy"
-          - "buzzochloricbees-effect-histamine-swells"
-          - "buzzochloricbees-effect-histamine-numb-to-the-bees"
-          - "buzzochloricbees-effect-histamine-cannot-be-one-with-the-bees"
-          - "buzzochloricbees-effect-squeaky-clean"
-        probability: 0.05
-        conditions:
-        - !type:ReagentThreshold
-          min: 0.01
-          reagent: Histamine
-        - !type:HasTag
-          invert: true
-          tag: Bee
-      - !type:PopupMessage
-        type: Local
-        visualType: Medium
-        messages:
-          - "buzzochloricbees-effect-licoxide-electrifying"
-          - "buzzochloricbees-effect-licoxide-shocked-by-bee-facts"
-          - "buzzochloricbees-effect-licoxide-buzzed"
-          - "buzzochloricbees-effect-licoxide-buzzes"
-        probability: 0.05
-        conditions:
-        - !type:HasTag
-          invert: true
-          tag: Bee
-        - !type:ReagentThreshold
-          min: 0.01
-          reagent: Licoxide
-      - !type:PopupMessage
-        type: Local
-        messages:
-          - "buzzochloricbees-effect-fiber-hairy"
-          - "buzzochloricbees-effect-fiber-soft"
-        probability: 0.05
-        conditions:
-        - !type:HasTag
-          invert: true
-          tag: Bee
-        - !type:ReagentThreshold
-          min: 0.01
-          reagent: Fiber
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: 2
-            Piercing: 2
-        conditions:
-        - !type:HasTag
-          invert: true
-          tag: Bee
 
 - type: reagent
   id: GroundBee

@@ -577,6 +577,20 @@
     - Botanist
 
 - type: listing
+  id: uplinkPrankBikeHorn
+  name: uplink-explosive-prank-bikehorn-name
+  description: uplink-explosive-prank-bikehorn-desc
+  productEntity: PrankBikeHorn
+  cost:
+    Telecrystal: 15
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Clown
+
+- type: listing
   id: uplinkNecronomicon
   name: uplink-necronomicon-name
   description: uplink-necronomicon-desc

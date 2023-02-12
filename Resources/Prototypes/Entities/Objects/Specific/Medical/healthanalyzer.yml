@@ -24,12 +24,66 @@
 
 - type: entity
   parent: HandheldHealthAnalyzer
+  id: HandheldHealthAnalyzerPregBees
+  suffix: Bee pregnancy
+  components:
+  - type: HealthAnalyzer
+    fake: true
+    disease: PregBees
+
+- type: entity
+  parent: HandheldHealthAnalyzer
   id: HandheldHealthAnalyzerGigacancer
   suffix: gigacancer
   components:
   - type: HealthAnalyzer
     fake: true
     disease: Ultragigacancer
+
+- type: entity
+  parent: HandheldHealthAnalyzer
+  id: HandheldHealthAnalyzerDiseaseProtoSpectralTiredness
+  suffix: Tiredness
+  components:
+  - type: HealthAnalyzer
+    fake: true
+    disease: disease-proto-spectral-tiredness
+
+- type: entity
+  parent: HandheldHealthAnalyzer
+  id: HandheldHealthAnalyzerStageIALungCancer
+  suffix: StageIALungCancer
+  components:
+  - type: HealthAnalyzer
+    fake: true
+    disease: StageIALungCancer
+
+- type: entity
+  parent: HandheldHealthAnalyzer
+  id: HandheldHealthAnalyzerStageIIALungCancer
+  suffix: StageIIALungCancer
+  components:
+  - type: HealthAnalyzer
+    fake: true
+    disease: StageIIALungCancer
+
+- type: entity
+  parent: HandheldHealthAnalyzer
+  id: HandheldHealthAnalyzerStageIIIALungCancer
+  suffix: StageIIIALungCancer
+  components:
+  - type: HealthAnalyzer
+    fake: true
+    disease: StageIIIALungCancer
+
+- type: entity
+  parent: HandheldHealthAnalyzer
+  id: HandheldHealthAnalyzerImmunoCancer
+  suffix: ImmunoCancer
+  components:
+  - type: HealthAnalyzer
+    fake: true
+    disease: ImmunoCancer
 
 ## I know admins will want this
 - type: entity
@@ -51,3 +105,14 @@
   - type: HealthAnalyzer
     fake: true
     disease: ActiveZombieVirus
+
+#Bluespace
+
+- type: entity
+  parent: HandheldHealthAnalyzer
+  id: HandheldHealthAnalyzerStageIBrainBluespaceCancer
+  suffix: StageIBrainBluespaceCancer
+  components:
+  - type: HealthAnalyzer
+    fake: true
+    disease: StageIBrainBluespaceCancer

@@ -32,6 +32,39 @@
             Quantity: 10
 
 - type: entity
+  id: BluespaceJoint
+  parent: BaseCigar
+  name: Bluespace joint
+  description: The greatest high ever.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Smokeables/Cannabis/Bluespace-joint.rsi
+    netsync: false
+    state: unlit-icon
+  - type: Tag
+    tags:
+      - Cigarette
+      - Trash
+  - type: Recyclable
+  - type: SpaceGarbage
+  - type: Clothing
+    sprite: Objects/Consumable/Smokeables/Cannabis/Bluespace-joint.rsi
+    slots: [ mask ]
+    equippedPrefix: unlit
+  - type: Item
+    size: 1
+  - type: Construction
+    graph: smokeableJoint
+    node: joint
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 20
+        reagents:
+          - ReagentId: THC
+            Quantity: 10
+
+- type: entity
   id: Blunt
   parent: BaseCigar
   name: blunt

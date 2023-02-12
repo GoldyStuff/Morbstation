@@ -2,6 +2,7 @@
 disease-proto-ultragigacancer = ultragigacancer
 disease-proto-spectral-tiredness = spectral tiredness
 disease-proto-lung-cancer = Stage IIIA Lung Cancer
+disease-proto-bee-pregnancy = Bee pregnancy
 
 # Infectious
 disease-proto-space-cold = space cold

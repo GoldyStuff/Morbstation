@@ -356,6 +356,8 @@
         orGroup: GiftPool
       - id: RGBStaff
         orGroup: GiftPool
+      - id: PrankBikeHorn
+        orGroup: GiftPool
     sound:
       path: /Audio/Effects/unwrap.ogg
 

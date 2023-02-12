@@ -176,5 +176,9 @@ flavor-complex-carpet = like a handful of fur
 flavor-complex-bee = unbeelievable
 flavor-complex-sax = like jazz
 
+## Morb
+flavor-complex-spacey = spacey
+flavor-complex-cosmic = cosmic
+
 ## Nyano???
 flavor-complex-enthralling = enthralling

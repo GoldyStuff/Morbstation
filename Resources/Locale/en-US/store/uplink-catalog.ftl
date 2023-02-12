@@ -139,6 +139,9 @@ uplink-carp-dehydrated-desc = Looks like a plush toy carp, but just add water an
 uplink-gatfruit-seeds-name = Packet Of Gatfruit Seeds
 uplink-gatfruit-seeds-desc = And who says guns don't grow on trees?
 
+uplink-explosive-prank-bikehorn-name = Prank Bikehorn
+uplink-explosive-prank-bikehorn-desc = It's just a prank bro!
+
 uplink-necronomicon-name = Necronomicon
 uplink-necronomicon-desc = An unholy book capable of summoning a demonic familiar.
 

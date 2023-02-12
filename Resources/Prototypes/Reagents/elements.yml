@@ -262,3 +262,21 @@
         damage:
           types:
             Radiation: 2
+
+- type: reagent
+  id: Portalfluid
+  name: reagent-name-portal-fluid
+  group: Elements
+  desc: reagent-desc-portal-fluid
+  physicalDesc: reagent-physical-desc-glowing
+  flavor: flavor-complex-spacey
+  color: "#8fa191"
+  meltingPoint: 1133.0
+  boilingPoint: 4131.0
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: 2

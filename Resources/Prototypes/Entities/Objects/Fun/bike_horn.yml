@@ -41,6 +41,49 @@
         Blunt: 0
 
 - type: entity
+  name: bike horn
+  description: A horn off of a bicycle.
+  parent: BaseItem
+  id: PrankBikeHorn
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/bikehorn.rsi
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: Item
+    size: 5
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Belt
+  - type: OnUseTimerTrigger
+    delay: 3.5
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 120 # about a ~4 tile radius
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Appearance
+    visuals:
+    - type: TimerTriggerVisualizer
+      countdown_sound:
+        path: /Audio/Effects/bikehorn_countdown.ogg
+
+- type: entity
   parent: BikeHorn
   id: GoldenBikeHorn
   name: golden honker
